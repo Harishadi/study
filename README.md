@@ -1,1 +1,1 @@
-# prstudy
+# study
