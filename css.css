@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  /* height: 100vh;
+  width: 100vw; */
+  background-color: rgb(255, 255, 255);
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+/* div conteiner */
+.profil-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 370px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 0 10px 20px black;
+  position: relative;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.profil-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36%;
+  width: 100%;
+  border-radius: 24px;
+  background-color: rgb(50, 231, 255);
+}
+
+/* div image */
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  /* background-color: rgb(50, 231, 255); */
+  padding: 2px;
+
+  margin-bottom: 20px;
+}
+
+.image .profil-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  /* border: solid 2px red; */
+}
+
+/* div teks name */
+.profil-card .teks-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 24px;
+}
+
+.teks-data .name {
+  font-size: 24px;
+  font-weight: 900;
+}
+.teks-data .job {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* div btn */
+.profil-card .media-butom {
+  display: flex;
+  /* background-color: transparent; */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profil-card .media-butom .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+
+  /* background-color: blue; */
+  margin: 0px 10px;
+  text-decoration: none;
+}
+
+.profil-card .media-butom i {
+  background-color: transparent;
+}
+
+.profil-card .media-butom a {
+  background: red;
+}
+.profil-card .media-butom a:hover {
+  background: rgb(21, 255, 0);
+}
+
+.profil-card .btn {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  /* background-color: blue; */
+}
+
+.btn .btnn {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  border-radius: 50px;
+  margin: 0px 10px;
+  padding: 8px 20px;
+  background-color: rgb(50, 231, 255);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn .btnn:hover {
+  background-color: rgb(0, 114, 299);
+}
+
+/* div analitik */
+
+.profil-card .analis {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  /* background-color: rgb(81, 146, 146); */
+}
+
+.analis .data {
+  /* background-color: aqua; */
+
+  display: flex;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  padding: 0px 10px;
+  /* border-right: solid 2px red; */
+}
+
+/* .analis .data i,span{
+  background-color: transparent;
+} */
+
+.data:last-child {
+  border-right: none;
+}
