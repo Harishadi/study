@@ -20,39 +20,13 @@ body {
 }
 
 .sidebar {
+  padding: 25px;
   background-color: #e7e9eb;
   width: 20%;
   float: left;
-  height: 80%;
+  height: 85%;
   overflow: auto;
-}
 
-.conten {
-  float: left;
-  background-color: rgb(255, 255, 255);
-  width: 80%;
-  height: 80%;
-  overflow: auto;
-}
-.header {
-  float: left;
-  background-color: #282a35;
-  width: 100%;
-  height: 10%;
-}
-.foter {
-  float: left;
-  background-color: #282a35;
-  width: 100%;
-  height: 10vh;
-}
-
-/* ============================================== */
-
-/* header */
-
-.sidebar {
-  padding: 25px;
   h1 {
     font-size: 1.5rem;
   }
@@ -72,18 +46,32 @@ body {
 }
 
 .conten {
-  /* color: black; */
+  float: left;
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  height: 85%;
+  overflow: auto;
   padding: 25px;
   box-shadow: 0 10px 20px black;
 }
 
 .header {
+  float: left;
+  background-color: #282a35;
+  width: 100%;
+  height: 5%;
   color: white;
   text-align: center;
+  line-height: 5vh;
+}
+.foter {
+  float: left;
+  background-color: #282a35;
+  width: 100%;
+  height: 10%;
+  color: white;
+  text-align: center;
+  line-height: 10vh;
 }
 
-.foter {
-  color: white;
-  text-align: center;
-  align-items: center;
-}
+/* mulaii */
