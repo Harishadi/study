@@ -7,6 +7,8 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="prism.css" />
+    <!-- <link rel="stylesheet" href="css.css" /> -->
 
     <title>CSSt</title>
 
@@ -66,12 +68,12 @@
       <div class="header">navbar</div>
       <!-- menu sidebar -->
       <div class="sidebar">
-        <h1>Projek CSS</h1>
+        <h2>Projek CSS</h2>
         <ul>
           <!-- <li><a href="index.html" class="menu1">Panel Bio</a></li>
           <li><a href="profilcard.html" class="menu2">Profil Card</a></li> -->
           <li>
-            <a href="index-dasar-css.html" class="menu3">Dasar-dasar CSS</a>
+            <a href="index.html" class="menu3">Tata Letak (Layout)</a>
           </li>
           <li><a href="" class="menu4">menu4</a></li>
           <li><a href="" class="menu5">menu5</a></li>
@@ -79,8 +81,215 @@
       </div>
       <!-- isi konten -->
       <div class="conten">
-        <h3>conten</h3>
-        <img src="" alt="" />
+        <div class="conten-isi">
+          <h2>Tata Letak (Layout) dengan Properti display.</h2>
+          <h3>Apa Itu display?</h3>
+          <p>
+            <b>Display</b> adalah properti CSS yang sangat penting untuk
+            mengatur bagaimana elemen HTML ditampilkan pada halaman web. Dengan
+            properti ini, kita bisa mengontrol apakah elemen akan berada di
+            baris baru, sejajar, tersembunyi, atau membentuk tata letak seperti
+            grid atau flexbox.
+          </p>
+          <h3>Kenapa <b>Display</b> Penting?</h3>
+          <ol>
+            <li>
+              Mengatur Posisi Elemen: Misalnya, apakah elemen akan sejajar atau
+              di baris baru.
+            </li>
+            <li>
+              Mengontrol Ukuran Elemen: Apakah elemen memenuhi lebar penuh atau
+              hanya sebesar kontennya.
+            </li>
+            <li>
+              Membuat Tata Letak Responsif: Menyesuaikan layout untuk berbagai
+              ukuran layar, seperti desktop dan ponsel.
+            </li>
+          </ol>
+          <h3>Nilai-Nilai Utama dalam <b>Display</b>:</h3>
+          <ol>
+            <li>block:</li>
+            <ul style="list-style-type: disc">
+              <li>Elemen memulai baris baru.</li>
+              <li>Lebar elemen memenuhi container induknya.</li>
+              <li>Contoh: <code>&lt;div&gt;, &lt;p&gt;, &lt;h1&gt;</code>.</li>
+              <li>
+                Kapan digunakan? Untuk membuat struktur seperti paragraf atau
+                bagian konten utama.
+              </li>
+            </ul>
+            <p>Contoh :</p>
+            <div class="box-code">
+              <pre class="box-code">
+              <code class="language-html">
+  <script type="prism-html-markup">
+    <div>Ini elemen block</div>
+    <div>Elemen ini ada di baris baru</div>
+  </script>
+              </code>
+            </pre>
+            </div>
+
+            <li>inline::</li>
+            <ul style="list-style-type: disc">
+              <li>Elemen tidak memulai baris baru.</li>
+              <li>Lebar elemen hanya sebesar kontennya.</li>
+              <li>Contoh: <code>&lt;span&gt;, &lt;p&gt;</code>.</li>
+              <li>
+                Kapan digunakan? Untuk elemen kecil seperti teks atau link.
+              </li>
+            </ul>
+            <p>Contoh :</p>
+            <div class="box-code">
+              <pre class="box-code">
+              <code class="language-html">
+  <script type="prism-html-markup">
+    <p>Ini <span>teks</span> di dalam paragraf.</p>
+  </script>
+              </code>
+            </pre>
+            </div>
+            <li>inline-block:</li>
+            <ul style="list-style-type: disc">
+              <li>Kombinasi inline dan block.</li>
+              <li>
+                Bisa diatur ukuran (lebar dan tinggi), tetapi tetap berada di
+                satu baris.
+              </li>
+              <li>
+                Kapan digunakan? Untuk tombol, ikon, atau elemen kecil yang
+                butuh ukuran tetap.
+              </li>
+            </ul>
+            <p>Contoh :</p>
+            <div class="box-code">
+              <pre class="box-code">
+              <code class="language-html">
+  <script type="prism-html-markup">
+    <button style="display: inline-block;">Tombol</button>
+    <button style="display: inline-block;">Tombol Lain</button>
+    
+  </script>
+              </code>
+            </pre>
+            </div>
+
+            <li>none:</li>
+            <ul style="list-style-type: disc">
+              <li>Menyembunyikan elemen dari tampilan.</li>
+              <li>Elemen tetap ada di dalam kode (DOM) tapi tidak terlihat.</li>
+              <li>
+                Kapan digunakan? Untuk elemen yang ingin disembunyikan
+                sementara.
+              </li>
+            </ul>
+            <p>Contoh :</p>
+            <div class="box-code">
+              <pre class="box-code">
+              <code class="language-html">
+  <script type="prism-html-markup">
+    <div style="display: none;">Ini tidak terlihat</div>
+  </script>
+              </code>
+            </pre>
+            </div>
+          </ol>
+
+          <h3>Nilai Modern untuk Tata Letak Fleksibel.</h3>
+          <ol>
+            <li>flex:</li>
+            <ul style="list-style-type: disc">
+              <li>Membuat tata letak yang fleksibel.</li>
+              <li>
+                Elemen bisa disusun secara horizontal (row) atau vertikal
+                (column).
+              </li>
+              <li>
+                Kapan digunakan? Untuk layout seperti navigasi atau kartu.
+              </li>
+              <p>Contoh :</p>
+              <div class="box-code">
+                <pre class="box-code">
+                <code class="language-html">
+    <script type="prism-html-markup">
+      <div style="display: flex; gap: 10px">
+        <div>Kolom 1</div>
+        <div>Kolom 2</div>
+        <div>Kolom 3</div>
+      </div>
+    </script>
+                </code>
+              </pre>
+              </div>
+            </ul>
+            <li>grid:</li>
+            <ul style="list-style-type: disc">
+              <li>Membuat tata letak berbasis grid (baris dan kolom).</li>
+              <li>
+                Kapan digunakan? Untuk layout kompleks, seperti halaman utama
+                atau dashboard.
+              </li>
+              <p>Contoh :</p>
+              <div class="box-code">
+                <pre class="box-code">
+                <code class="language-html">
+    <script type="prism-html-markup">
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px;">
+        <div>Kolom 1</div>
+        <div>Kolom 2</div>
+        <div>Kolom 3</div>
+      </div>
+      
+    </script>
+                </code>
+              </pre>
+              </div>
+            </ul>
+          </ol>
+
+          <h3>Ringkasan Kapan Menggunakan Nilai display:</h3>
+
+          <table class="tabel">
+            <thead class="t-h">
+              <tr>
+                <td>Nilai</td>
+                <td>Contoh Elemen</td>
+                <td>Kapan Digunaka</td>
+              </tr>
+            </thead>
+
+            <tbody class="t-b">
+              <tr>
+                <td>block</td>
+                <td>Untuk paragraf, header, atau bagian konten</td>
+                <td><code>&lt;div&gt;, &lt;p&gt;, &lt;h1&gt;</code></td>
+              </tr>
+
+              <tr>
+                <td>inline</td>
+                <td>Untuk teks atau link kecil</td>
+                <td><code>&lt;span&gt;, &lt;a&gt;</code></td>
+              </tr>
+
+              <tr>
+                <td>inline-block</td>
+                <td>Untuk tombol atau ikon kecil</td>
+
+                <td><code>&lt;button&gt;, &lt;img&gt;</code></td>
+              </tr>
+              <tr>
+                <td>flex</td>
+                <td>Untuk layout fleksibel (navigasi, kartu)</td>
+                <td><code>&lt;button&gt;</code></td>
+              </tr>
+              <tr>
+                <td>grid</td>
+                <td>Untuk layout kompleks (baris/kolom)</td>
+                <td><code>&lt;button&gt;</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
       <!-- footer -->
       <div class="foter">
@@ -88,5 +297,24 @@
         waktu tahun
       </div>
     </div>
+
+    <script src="prism.js"></script>
   </body>
 </html>
+
+<style>
+  pre code {
+    white-space: pre-wrap; /* Membungkus teks panjang */
+    word-break: break-word; /* Memotong teks pada batas kata agar tidak terlalu panjang */
+  }
+</style>
+
+<!-- <div class="box-code">
+  <pre>
+  <code class="language-html">
+<script type="prism-html-markup">
+
+</script>
+  </code>
+</pre>
+</div> -->
